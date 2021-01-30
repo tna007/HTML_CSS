@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-banner {
+  background: linear-gradient(rgb(255, 255, 255)),
+    rgb(255, 255, 255) center no-repeat cover relative;
+}
+.hero-text {
+  font-family: "Lora", serif;
+  font-size: 34px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+body {
+  background: rgb(230, 205, 209)
+    url(https://source.unsplash.com/9Z1KRIfpBTM/1600x900) no-repeat fixed center
+    center/cover;
+
+  color: whitesmoke;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  float: left;
+}
+
+section {
+  clear: both;
+}
+
+ul {
+  list-style-type: circle;
+}
+li {
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 7%;
+  background: purple;
+}
+
+a {
+  color: rgb(175, 202, 130);
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background: rgba(240, 255, 240, 0);
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  padding: 40px 40px;
+  margin: 50px;
+  color: whitesmoke;
+}
+.box1 {
+  background-color: teal;
+  border: 7px dotted palevioletred;
+}
+.box2 {
+  background-color: rgb(23, 18, 90);
+  border: 7px double rgb(209, 216, 112);
+}
+.box3 {
+  background-color: rgb(18, 82, 90);
+  border-top: 24px dotted yellow;
+  border-left: 24px inset green;
+  border-right: 24px groove red;
+  border-bottom: 24px dashed plum;
+  border-radius: 15px;
+}
+.box4 {
+  background-color: orange;
+  border: 7px solid whitesmoke;
+}
+.box5 {
+  background-color: orange;
+  border: 7px solid whitesmoke;
+  border-radius: 50%;
+}

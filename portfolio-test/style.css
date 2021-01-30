@@ -1,0 +1,14 @@
+body {
+  background: lavender;
+  color: rgb(51, 51, 51);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  background: rgba(150, 125, 196, 0.671);
+  color: whitesmoke;
+  list-style-type: circle;
+}
