@@ -1,0 +1,20 @@
+body {
+  background: rgb(243, 226, 243);
+}
+
+@media (max-width: 992px) {
+  body {
+    background: lightgreen;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background: lightsalmon;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    background: lightskyblue;
+  }
+}

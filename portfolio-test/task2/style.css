@@ -4,11 +4,60 @@
   box-sizing: border-box;
 }
 
-.hero-banner {
-  background: linear-gradient(rgb(255, 255, 255)),
-    rgb(255, 255, 255) center no-repeat cover relative;
+body {
+  background: rgb(230, 205, 209) no-repeat fixed center center/cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(36, 36, 36);
 }
-.hero-text {
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  display: block;
+  clear: both;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+p {
+  margin: 16px 0;
+  line-height: 1.5;
+}
+
+header {
+  /* text-align: center;
+  background: url("https://source.unsplash.com/JdlIfpb9dgM/") center
+      no-repeat cover relative;
+  width: auto; */
+  min-height: 800px;
+  text-align: center;
+  background: url("https://source.unsplash.com/JdlIfpb9dgM/") no-repeat fixed
+    center center/cover;
+}
+#main-nav {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(216, 194, 212, 0.596);
+  /* min-width: 1200px; */
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  transition: 0.4s;
+  color: azure;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+#hero-banner {
   font-family: "Lora", serif;
   font-size: 34px;
   text-align: center;
@@ -18,79 +67,57 @@
   transform: translate(-50%, -50%);
   color: white;
 }
-body {
-  background: rgb(230, 205, 209)
-    url(https://source.unsplash.com/9Z1KRIfpBTM/1600x900) no-repeat fixed center
-    center/cover;
 
-  color: whitesmoke;
+header .container {
+  padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+header nav ul {
+  list-style-type: none;
+  margin: 16px 32px;
 }
 
-img {
-  float: left;
-}
-
-section {
-  clear: both;
-}
-
-ul {
-  list-style-type: circle;
-}
-li {
+header nav ul li {
   display: inline-block;
-  padding: 10px;
-  margin: 20px;
-  border-radius: 7%;
-  background: purple;
+  padding: 0 16px;
 }
 
-a {
-  color: rgb(175, 202, 130);
+header a {
   text-decoration: none;
+  color: rgb(236, 236, 236);
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
-header {
-  background: rgba(240, 255, 240, 0);
+
+#past,
+#present,
+#future {
+  padding: 50px;
+  min-height: 500px;
 }
 
-.box {
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-  padding: 40px 40px;
-  margin: 50px;
-  color: whitesmoke;
+#past img,
+#future img {
+  float: left;
+  margin-right: 50px;
 }
-.box1 {
-  background-color: teal;
-  border: 7px dotted palevioletred;
+
+#present img {
+  float: right;
+  margin-left: 50px;
 }
-.box2 {
-  background-color: rgb(23, 18, 90);
-  border: 7px double rgb(209, 216, 112);
+
+footer {
+  background-color: DarkSalmon;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  padding: 8px;
 }
-.box3 {
-  background-color: rgb(18, 82, 90);
-  border-top: 24px dotted yellow;
-  border-left: 24px inset green;
-  border-right: 24px groove red;
-  border-bottom: 24px dashed plum;
-  border-radius: 15px;
-}
-.box4 {
-  background-color: orange;
-  border: 7px solid whitesmoke;
-}
-.box5 {
-  background-color: orange;
-  border: 7px solid whitesmoke;
-  border-radius: 50%;
+
+.contact {
+  text-align: left;
+  margin: 10px;
 }
