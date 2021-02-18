@@ -5,34 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio step 2</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <div class="container"></div>
-        <div id="main-nav">
-          <div class="logo"><h1>Anh To</h1></div>
-  
-          <nav>
-            <ul>
-              <li><a href="index.html">About me</a></li>
-              <li><a href="#contact">Contacts</a></li>
-            </ul>
-          </nav>
-        </div>
-        <section id ="hero-banner">                
-          <p>Welcome to my own planet</p>              
-        </section>
-      
-      
-    </header>
-    
-    <main>
-     
+      <div id="main-nav">
+        <div class="logo"><h1>Anh To</h1></div>
 
-      <section id = "past">
+        <nav>
+          <ul>
+            <li><a href="index.html">About me</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <section id="hero-banner">
+        <h2>Welcome to my own planet</h2>
+      </section>
+    </header>
+
+    <main>
+      <section id="past">
         <div class="container">
           <h2>Past</h2>
           <img
@@ -48,6 +46,7 @@
             nostrum ratione velit voluptates dolores dolore molestiae optio
             aperiam consectetur, itaque illum? Ipsum, velit?
           </p>
+        </div>
       </section>
 
       <section id="present">
@@ -67,17 +66,18 @@
             nostrum ratione velit voluptates dolores dolore molestiae optio
             aperiam consectetur, itaque illum? Ipsum, velit?
           </p>
-        </div>          
+        </div>
       </section>
-      
+
       <section id="future">
         <div class="container">
           <h2>Future</h2>
 
           <img
             src="https://source.unsplash.com/wj5dWEagcs4/400x300"
-            alt="sample">
-          
+            alt="sample"
+          />
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
             voluptatum beatae sint, doloribus vel deserunt a repellendus quas
@@ -86,29 +86,48 @@
             nostrum ratione velit voluptates dolores dolore molestiae optio
             aperiam consectetur, itaque illum? Ipsum, velit?
           </p>
-        </div>          
+        </div>
       </section>
     </main>
 
     <footer>
-      <div class="contact">
+      <div class="contact-container">
         <h2>Contact</h2>
-      </div>
-      <div class="contact">
         <form id="contact">
-        <label for="guestName">Name</label>
-        <input type="text" name="contact" id="guestName" placeholder="What should I call you">
-        <label for="mail">Email</label>
-        <input type="email" name="contact" id="mail" required placeholder="Enter your email">
-        <label for="message">Write message</label>
-        <input type="text" name="contact" id="message" required>
-        <input type="submit" value="Send">
-      </form>
-    </div>
-      
-      
-      <p>Copyright: To Anh. All rights reserved.
-      <a href="mailto:tongoxanh@gmail.com">tongoxanh@gmail.com</a></p>
+          <label for="guestName">Name</label>
+          <input
+            type="text"
+            name="contact"
+            id="guestName"
+            placeholder="What should I call you"
+          />
+
+          <label for="mail">Email</label>
+          <input
+            type="email"
+            name="contact"
+            id="mail"
+            required
+            placeholder="Enter your email"
+          />
+
+          <label for="message">Message</label>
+          <input
+            type="text"
+            name="contact"
+            id="message"
+            required
+            style="height: 100px"
+          />
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <p>
+        Copyright: To Anh. All rights reserved.
+        <a href="mailto:tongoxanh@gmail.com">tongoxanh@gmail.com</a>
+      </p>
     </footer>
     <script src="script.js"></script>
   </body>
