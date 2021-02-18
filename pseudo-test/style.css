@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: cadetblue;
+  font-size: 1.2rem;
+}
+
+header {
+  background-color: lightgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+}
+
+a:first-child {
+  color: wheat;
+  text-decoration: underline;
+}
+
+a:focus {
+  color: green;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: lightsalmon;
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  background-color: indianred;
+}
+
+li:nth-child(2n + 4) {
+  background: lightslategrey;
+}
+
+#hero-banner {
+  height: 40vh;
+  background: url(https://source.unsplash.com/GpDoS0dh43o) no-repeat fixed
+    center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#hero-banner::after {
+  content: "";
+  background-color: rgba(28, 114, 100, 0.37);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+#hero-banner h1 {
+  z-index: 1;
+  color: white;
+}
+#hero-banner h1::before {
+  content: "hei ";
+}
+#hero-banner h1::after {
+  content: " bye ";
+}
+#hero-banner h1::first-letter {
+  z-index: 1;
+  font-size: 5rem;
+  color: yellow;
+}
+
+#boxes {
+  background-color: thistle;
+  position: relative;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background: rgb(98, 131, 165);
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.box:nth-child(3) {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.box:last-child {
+  margin-bottom: 0;
+}
