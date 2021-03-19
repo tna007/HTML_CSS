@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio step 2</title>
+    <meta
+      name="description"
+      content="Portfolio project for HTML-CSS3 course at BCH"
+    />
+    <meta name="author" content="Anh To" />
+    <meta name="keywords" content="HTML5, CSS3, Portfolio " />
+    <title>Portfolio project</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -13,32 +19,55 @@
   </head>
   <body>
     <header>
-      <div class="logo">Anh To</div>
-      <nav id="main-nav">
-        <ul>
-          <li><a href="#">Past</a></li>
-          <li><a href="#">Present</a></li>
-          <li><a href="#">Future</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <section id="hero-banner">
-        <h2>Welcome to my planet</h2>
-      </section>
+      <div class="container">
+        <div id="main-nav">
+          <div class="logo">Anh To</div>
+          <nav>
+            <ul>
+              <li><a href="#">Past</a></li>
+              <li><a href="#">Present</a></li>
+              <li><a href="#">Future</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <section id="hero-banner">
+          <div class="hero">
+            <h2>Welcome to my planet</h2>
+          </div>
+        </section>
+      </div>
     </header>
 
     <main>
       <section id="past">
         <div class="container">
           <h2>Past</h2>
-          <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </div>
-          <div class="box">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </div>
-          <div class="box">
-            Lorem ipsum dolor, sit amet consectetur adipisicing.
+          <div class="boxes">
+            <div class="box">
+              <img
+                src="https://source.unsplash.com/wj5dWEagcs4/400x300"
+                alt="sample"
+              />
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <a href="#">See more</a>
+            </div>
+            <div class="box">
+              <img
+                src="https://source.unsplash.com/wj5dWEagcs4/400x300"
+                alt="sample"
+              />
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <a href="#">See more</a>
+            </div>
+            <div class="box">
+              <img
+                src="https://source.unsplash.com/wj5dWEagcs4/400x300"
+                alt="sample"
+              />
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <a href="#">See more</a>
+            </div>
           </div>
         </div>
       </section>
@@ -53,12 +82,9 @@
           />
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-            voluptatum beatae sint, doloribus vel deserunt a repellendus quas
-            voluptas excepturi fugiat saepe temporibus velit nihil dignissimos.
-            Dolor dolorum voluptatum qui cupiditate nisi. Vitae sed hic qui
-            nostrum ratione velit voluptates dolores dolore molestiae optio
-            aperiam consectetur, itaque illum? Ipsum, velit?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde hic
+            dicta blanditiis! Nemo atque enim excepturi odit ratione doloribus
+            corrupti distinctio minus ullam aperiam.
           </p>
         </div>
       </section>
@@ -73,55 +99,49 @@
           />
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-            voluptatum beatae sint, doloribus vel deserunt a repellendus quas
-            voluptas excepturi fugiat saepe temporibus velit nihil dignissimos.
-            Dolor dolorum voluptatum qui cupiditate nisi. Vitae sed hic qui
-            nostrum ratione velit voluptates dolores dolore molestiae optio
-            aperiam consectetur, itaque illum? Ipsum, velit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+            quia, ullam debitis amet quo, vero ut harum aperiam, similique
+            provident error omnis officia suscipit?
           </p>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer id="footer">
       <div class="contact-container">
-        <h2>Contact</h2>
+        <h2>Contact me</h2>
         <form id="contact">
-          <label for="guestName">Name</label>
-          <input
-            type="text"
-            name="contact"
-            id="guestName"
-            placeholder="What should I call you"
-          />
-
-          <label for="mail">Email</label>
-          <input
-            type="email"
-            name="contact"
-            id="mail"
-            required
-            placeholder="Enter your email"
-          />
-
-          <label for="message">Message</label>
-          <input
-            type="text"
-            name="contact"
-            id="message"
-            required
-            style="height: 100px"
-          />
+          <div class="form-group">
+            <label for="guestName">Name</label>
+            <input
+              type="text"
+              name="contact"
+              id="guestName"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="mail">Email</label>
+            <input
+              type="email"
+              name="contact"
+              id="mail"
+              required
+              placeholder="Your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
 
           <button type="submit">Send</button>
         </form>
+        <p class="copyright">
+          © 2021 <a href="mailto:tongoxanh@gmail.com">To Anh</a>. All rights
+          reserved.
+        </p>
       </div>
-
-      <p>
-        Copyright: To Anh. All rights reserved.
-        <a href="mailto:tongoxanh@gmail.com">tongoxanh@gmail.com</a>
-      </p>
     </footer>
     <script src="script.js"></script>
   </body>

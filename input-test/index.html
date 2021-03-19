@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selection of input type</title>
+  </head>
+  <body>
+    <style>
+      body,
+      input,
+      button,
+      select,
+      option {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Verdana, sans-serif;
+        font-size: 16px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #333;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+      table {
+        margin: 20px;
+      }
+      th {
+        background-color: lightcoral;
+        color: wheat;
+      }
+      .center {
+        text-align: center;
+      }
+    </style>
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Input example</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="center" colspan="3">Input types selection</td>
+        </tr>
+        <tr>
+          <td>type= 'button'</td>
+          <td><input type="button" value="click me" /></td>
+          <td>Button text(name) equals to value attribute</td>
+        </tr>
+        <tr>
+          <td>type= 'checkbox'</td>
+          <td><input type="checkbox" id="checkbox" /></td>
+          <td><label for="checkbox">Click me to select</label></td>
+        </tr>
+        <tr>
+          <td>type= 'color'</td>
+          <td><input type="color" value="#ff66f7" /></td>
+          <td>
+            Value attribute is to set default color. <br />
+            This type input is not supported in IE11 & earlier versions or
+            Safari 9.1 and earlier versions.
+          </td>
+        </tr>
+        <tr>
+          <td>type= 'date'</td>
+          <td><input type="date" /></td>
+          <td>
+            type= 'date' not supported in Safari or IE11 and earlier versions.
+          </td>
+        </tr>
+        <tr>
+          <td>type='button'</td>
+          <td><input type="email" placeholder="Enter email" /></td>
+          <td>IE9 and earlier versions are not supported.</td>
+        </tr>
+        <tr>
+          <td>type='file'</td>
+          <td><input type="file" /></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>type='month'</td>
+          <td><input type="month" /></td>
+          <td>Firefox, Safari, IE11 and earlier not supported</td>
+        </tr>
+        <tr>
+          <td>type='number'</td>
+          <td><input type="number" min="7" max="24" /></td>
+          <td>
+            Use min/max attribute to add numeric restrictions for the input
+            field <br />IE9 and earlier not supported
+          </td>
+        </tr>
+        <tr>
+          <td>type='password'</td>
+          <td><input type="password" /></td>
+          <td>The characters in input field are masked</td>
+        </tr>
+        <tr>
+          <td>type='radio'</td>
+          <td><input type="radio" />Radiobutton</td>
+          <td>'Radiobutton' text comes after input tag</td>
+        </tr>
+        <tr>
+          <td>type='range'</td>
+          <td><input type="range" /></td>
+          <td>
+            Use min/max attribute to add numeric restrictions for the input
+            field <br />IE9 and earlier not supported
+          </td>
+        </tr>
+        <tr>
+          <td>type='reset'</td>
+          <td><input type="reset" /></td>
+          <td>
+            If you change the input values and then click the "Reset" button,
+            the form-data will be reset to the default values.
+          </td>
+        </tr>
+        <tr>
+          <td>type='search'</td>
+          <td><input type="search" /></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>type='submit'</td>
+          <td><input type="submit" /></td>
+          <td>Needs for sending data to backend, e.g PHP</td>
+        </tr>
+        <tr>
+          <td>type='tel'</td>
+          <td><input type="tel" /></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>type='text'</td>
+          <td><input type="text" /></td>
+          <td>Most common input used</td>
+        </tr>
+        <tr>
+          <td>type='time'</td>
+          <td><input type="time" /></td>
+          <td>Safari, IE12 & earlier not supported</td>
+        </tr>
+        <tr>
+          <td>type='url'</td>
+          <td><input type="url" /></td>
+          <td>IE9 & earlier not supported</td>
+        </tr>
+        <tr>
+          <td>type='week'</td>
+          <td><input type="week" /></td>
+          <td>Firefox, Safari, IE11 & earlier not supported</td>
+        </tr>
+        <tr>
+          <td class="center" colspan="3">Select and texarea:</td>
+        </tr>
+        <tr>
+          <td>Select example:</td>
+          <td>
+            <select name="cars" id="">
+              <option value="audi">Audi</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="volvo">Volvo</option>
+              <option value="lamborghini">Lamborghini</option>
+            </select>
+          </td>
+          <td>Select is wrapping options</td>
+        </tr>
+        <tr>
+          <td>Textarea:</td>
+          <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+          <td>
+            The size of a textarea specified by the cols and rows attributes, or
+            even better by CSS height and width properties.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
