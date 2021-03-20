@@ -33,17 +33,19 @@ a:first-child {
   color: wheat;
   text-decoration: underline;
 }
-
 a:focus {
   color: green;
   text-decoration: underline;
 }
-
 a:hover {
   color: lightsalmon;
   text-decoration: underline;
 }
 
+/* a:active {
+  color: green;
+  text-decoration: underline;
+} :active meaning while clicking over an element, this attribute must come after hoover to be in effect */
 button {
   cursor: pointer;
 }
@@ -67,7 +69,7 @@ li:nth-child(2n + 4) {
 }
 
 #hero-banner::after {
-  content: "";
+  content: ""; /*must add content otherwise there will be no effect*/
   background-color: rgba(28, 114, 100, 0.37);
   height: 100%;
   width: 100%;
