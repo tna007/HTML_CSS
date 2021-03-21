@@ -2,6 +2,8 @@
   --pink-lavender: rgba(223, 177, 206, 0.877);
   --royal-violet: rgb(139, 115, 173);
   --dark-blue: rgb(60, 58, 131);
+  --light-pink: rgb(223, 177, 205);
+  --light-orange: rgb(243, 186, 100);
 }
 
 * {
@@ -13,8 +15,8 @@
 body {
   background-image: linear-gradient(
     to bottom,
-    rgb(223, 177, 205),
-    rgb(60, 58, 131)
+    var(--light-pink),
+    var(--dark-blue)
   );
   background-repeat: no-repeat;
   background-size: 100%;
@@ -49,6 +51,7 @@ p {
   line-height: 1.5;
 }
 
+/***HEADER***/
 header {
   min-height: 100vh;
   min-width: 100%;
@@ -65,49 +68,6 @@ header {
     url("https://source.unsplash.com/JdlIfpb9dgM/") 0 0 / cover no-repeat;
   -webkit-animation: gradient 40s ease infinite;
   animation: gradient 40s ease infinite;
-}
-.main-nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: var(--pink-lavender);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  transition: 0.4s;
-  z-index: 1;
-}
-.main-nav a {
-  font-size: 1.25rem;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  margin: 1rem;
-  z-index: 2;
-}
-
-nav ul li {
-  padding: 0.5rem 2rem;
-  display: block;
-}
-
-nav ul li:hover {
-  text-decoration: underline;
-}
-
-#burger {
-  position: absolute;
-  top: 2.5rem;
-  right: 2rem;
-  display: none;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  opacity: 0.3;
 }
 
 @-webkit-keyframes gradient {
@@ -132,20 +92,93 @@ nav ul li:hover {
     background-position: 0% 30%, 0 0;
   }
 }
+.logo {
+  height: 11vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.logo img {
+  transform: rotate(-90deg);
+}
+.main-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--pink-lavender);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.4s;
+  z-index: 1;
+}
+.main-nav a {
+  font-size: 1.25rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 2rem;
+  display: block;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+#burger {
+  position: absolute;
+  display: none;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
 
 #hero-banner {
   height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
+#hero-banner span {
+  font-size: 3em;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
 
+@keyframes glow {
+  from {
+    color: #fff;
+    text-shadow: 0 0 10px var(--light-orange), 0 0 20px var(--light-orange),
+      0 0 30px var(--light-orange), 0 0 40px var(--light-orange),
+      0 0 50px var(--light-orange), 0 0 60px var(--light-orange),
+      0 0 70px var(--light-orange), 0 0 90px var(--light-orange);
+  }
+
+  to {
+    color: rgb(63, 63, 63);
+    text-shadow: 0 0 20px var(--light-orange), 0 0 30px var(--light-orange),
+      0 0 40px var(--light-orange), 0 0 50px var(--light-orange),
+      0 0 60px var(--light-orange), 0 0 70px var(--light-orange),
+      0 0 80px var(--light-orange), 0 1 90px var(--light-orange);
+  }
+}
 #hero-banner h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #fff;
   text-align: center;
 }
 
+/***MAIN***/
 #project,
 #about,
 #skill {
@@ -166,21 +199,24 @@ nav ul li:hover {
 #project .boxes {
   display: flex;
   justify-content: space-between;
-  color: #fff;
   cursor: pointer;
 }
-
+#project a {
+  color: #333;
+}
 #project .box {
-  background-color: rgb(139, 115, 173);
+  background-color: transparent;
+  border-radius: 30px;
   width: 30%;
   margin: 1rem 0;
   padding: 1rem;
-  box-shadow: 0px 0px 5px 0px rgb(139, 115, 173);
+  box-shadow: 0px 0px 5px 0px var(--royal-violet);
   display: flex;
   flex-direction: column;
 }
 
 #project .box img {
+  border-radius: 15px;
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -190,7 +226,7 @@ nav ul li:hover {
   padding: 1rem 0;
 }
 #project .box:hover {
-  box-shadow: 3px 3px 15px 5px rgb(139, 115, 173);
+  box-shadow: 3px 3px 15px 5px var(--royal-violet);
 }
 
 #about .container {
@@ -233,35 +269,64 @@ nav ul li:hover {
   padding: 0 5px;
   height: 30px;
   width: 100%;
-  text-align: left;
   position: relative;
+  cursor: pointer;
+  box-sizing: content-box;
+  text-align: center;
 }
 
 .skill-value {
-  box-shadow: 0 10px 40px -10px #fff;
+  box-shadow: 0 12px 40px -15px #fff;
   border-radius: 100px;
-  background: #fff;
-  height: 30px;
-  width: 0;
-  color: var(--dark-blue);
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  color: transparent;
   font-weight: 700;
   text-align: center;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
 }
-.html {
-  animation: load1 3s normal forwards;
+
+.skill-value:hover {
+  background: #fff;
+  color: var(--dark-blue);
+  transition: ease-out 1s;
 }
+
+.html:hover {
+  width: 70%;
+}
+.css:hover {
+  width: 60%;
+}
+.js:hover,
+.figma:hover {
+  width: 50%;
+}
+
+.python:hover {
+  width: 45%;
+}
+
+/* .html {
+  animation: load1 3s forwards;
+}
+
 .css {
-  animation: load2 3s normal forwards;
-}
-.js {
-  animation: load3 3s normal forwards;
-}
-.python {
-  animation: load4 3s normal forwards;
+  animation: load2 3s 0.25s forwards;
 }
 .figma {
-  animation: load5 3s normal forwards;
+  animation: load2 3s 0.5s forwards;
 }
+.js {
+  animation: load3 3s 0.75s forwards;
+}
+.python {
+  animation: load3 3s 1s forwards;
+}
+
 @keyframes load1 {
   0% {
     width: 0;
@@ -285,23 +350,7 @@ nav ul li:hover {
   100% {
     width: 50%;
   }
-}
-@keyframes load4 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 50%;
-  }
-}
-@keyframes load5 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 60%;
-  }
-}
+}*/
 
 footer {
   background-color: linear-gradient(
@@ -310,7 +359,7 @@ footer {
     rgb(60, 58, 131)
   );
   text-align: center;
-  color: rgba(255, 255, 255, 0.925);
+  color: rgba(255, 255, 255, 0.8);
   margin: 1rem;
   padding: 1rem;
 }
@@ -362,6 +411,28 @@ footer .copyright {
   margin-top: 32px;
   font-size: 12px;
 }
+
+.toTop {
+  background-color: rgba(139, 115, 173, 0.5);
+  padding: 0.25rem;
+  border: none;
+  outline: none;
+  width: 3em;
+  height: 3em;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.toTop:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+footer .SoMe-icon {
+  display: block;
+}
 /* reponsive mobile mode*/
 
 @media (max-width: 768px) {
@@ -371,8 +442,9 @@ footer .copyright {
   nav ul li {
     padding: 1rem;
   }
-  #hero-banner {
-    height: 20vh;
+
+  #hero-banner h2 {
+    font-size: 3rem;
   }
 }
 
@@ -384,20 +456,24 @@ footer .copyright {
   header {
     width: 57vh;
   }
-
+  .logo {
+    left: 2rem;
+  }
   #burger {
     display: flex;
-    top: 1.5rem;
+    top: 3rem;
+    right: 2rem;
   }
   .main-nav {
     flex-direction: column;
     align-items: flex-start;
   }
-  .links {
+  nav .links {
     width: 100%;
     display: none;
   }
-  .active {
+  nav .active {
+    height: 100vh;
     display: block;
   }
   nav ul {
