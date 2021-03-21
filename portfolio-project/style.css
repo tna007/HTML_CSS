@@ -313,48 +313,6 @@ nav ul li:hover {
   width: 45%;
 }
 
-/* .html {
-  animation: load1 3s forwards;
-}
-
-.css {
-  animation: load2 3s 0.25s forwards;
-}
-.figma {
-  animation: load2 3s 0.5s forwards;
-}
-.js {
-  animation: load3 3s 0.75s forwards;
-}
-.python {
-  animation: load3 3s 1s forwards;
-}
-
-@keyframes load1 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 70%;
-  }
-}
-@keyframes load2 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 60%;
-  }
-}
-@keyframes load3 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 50%;
-  }
-}*/
-
 footer {
   background-color: linear-gradient(
     to bottom,
