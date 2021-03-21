@@ -249,6 +249,9 @@ nav ul li:hover {
   justify-content: space-around;
   align-items: center;
 }
+.about-text span {
+  font-style: italic;
+}
 .about-text h2 {
   position: absolute;
   top: -1rem;
