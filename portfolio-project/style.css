@@ -430,11 +430,11 @@ footer .SoMe-icon {
     flex-direction: column;
     align-items: flex-start;
   }
-  nav .links {
+  .links {
     width: 100%;
     display: none;
   }
-  nav .active {
+  .active {
     height: 100vh;
     display: block;
   }
