@@ -263,6 +263,7 @@ img {
   grid-template-rows: 30px auto 30px;
   column-gap: 5px;
   row-gap: 15px;
+  font-size: 18px;
 }
 .skill-container {
   flex: 50%;
