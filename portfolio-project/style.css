@@ -255,6 +255,15 @@ img {
   position: absolute;
   top: -1rem;
 }
+
+.tech-stack {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 80px auto 80px;
+  column-gap: 5px;
+  row-gap: 15px;
+}
 .skill-container {
   flex: 50%;
   height: 100%;
