@@ -297,19 +297,19 @@ img {
   transition: ease-out 1s;
 }
 
-.html:hover {
+.js:hover {
   width: 70%;
 }
-.css:hover {
+.react:hover,
+.php:hover {
   width: 60%;
 }
-.js:hover,
-.figma:hover {
+.drupal:hover {
   width: 50%;
 }
 
 .python:hover {
-  width: 45%;
+  width: 40%;
 }
 
 footer {
