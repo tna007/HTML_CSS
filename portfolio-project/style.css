@@ -260,7 +260,7 @@ img {
   margin-top: 1em;
   display: grid;
   grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 80px auto 80px;
+  grid-template-rows: 50px auto 50px;
   column-gap: 5px;
   row-gap: 15px;
 }
